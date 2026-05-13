@@ -5,10 +5,11 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TypesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StoreController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-
+Route::get('/', [StoreController::class, 'index'])->name('store.index');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
