@@ -1,0 +1,19 @@
+Foi adicionada uma nova tela inicial para a Loja Virtual utilizando Laravel e Tailwind CSS.
+
+Foi criado o StoreController para controlar a listagem de produtos da tela inicial.
+
+Foi adicionada uma rota principal no arquivo web.php apontando para a nova tela da loja.
+
+Foi criada a view store/index.blade.php responsável pelo layout da página inicial.
+
+Na tela inicial foram adicionados:
+
+* listagem dinâmica de produtos cadastrados no banco de dados;
+* filtro por tipo de produto;
+* exibição apenas de produtos com quantidade maior que zero;
+* navbar com acesso para login e registro;
+* banner principal personalizado;
+* cards estilizados para os produtos;
+* footer personalizado.
+
+Também foram utilizados recursos do Tailwind CSS para melhorar a aparência visual da aplicação.
