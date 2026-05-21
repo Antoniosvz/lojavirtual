@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Log;
 
 class ProductsController extends Controller
 {
+    
+    public function apiIndex()
+    {
+        return Product::with('type')->get();
+    }
     //
     public function create()
     {
